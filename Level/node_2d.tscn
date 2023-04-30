@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://771b44bhjvy6"]
+
+[ext_resource type="PackedScene" uid="uid://d4aidsu0ag22a" path="res://chars/Player.tscn" id="1_5thjj"]
+[ext_resource type="PackedScene" uid="uid://dw7otsf370neh" path="res://chars/wall.tscn" id="2_tsftp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_5thjj")]
+position = Vector2(120, 80)
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+anchor_mode = 0
+zoom = Vector2(2, 2)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_tsftp")]
+position = Vector2(40, 40)
